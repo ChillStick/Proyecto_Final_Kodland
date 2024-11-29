@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Parkinsans', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    background-color: #F8FFE5;
+    color: #131212;
+}
+
+h1, h2, p {
+    margin: 10;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url("../img/back.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #1B9AAA66;
+    padding: 25vh 30px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: fit-content;
+    text-align: right;
+}
+
+main {
+    padding: 0 30px 100px;
+}
+
+.main__title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list__item a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: inherit;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 24px;
+    border: 1px solid #06D6A0;
+    transition: 0.2s;
+}
+.item__img {
+    object-fit: contain;
+    width: 150px;
+}
+
+.item_search {
+    object-fit: contain;
+    width: 150px;
+    margin: 0 0 20px 44%;
+}
+
+.list__item a:hover {
+    box-shadow: 1px 1px 4px 4px #2ee7b5;
+}
+
+.main__rez {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.rez__img {
+    object-fit: contain;
+    width: 300px;
+}
+
+.main__title--margin {
+    margin-bottom: 50px;
+}
+
+.main__link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 0;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #2ee7b5;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.cuest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.user input {
+    padding: 10px;
+    border: 1px solid #06D6A0;
+    background: inherit;
+    border-radius: 5px;
+    font: inherit;
+    width: 100%;
+    color: #06D6A0;
+}
+
+.user textarea {
+    padding: 10px;
+    border: 1px solid #06D6A0;
+    background: inherit;
+    border-radius: 5px;
+    font: inherit;
+    width: 100%;
+    color: #06D6A0;
+    resize: none;
+}
+
+.user input:focus,
+.user input:active {
+    border: 1px solid #06D6A0;
+    outline: none;
+}
+
+.user textarea:focus,
+.user textarea:active {
+    border: 1px solid #06D6A0;
+    outline: none;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.user-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+label {
+    display:inline-block ;
+    margin-bottom: 10px;
+}
+
+.address-date {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.delivery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    width: 10%;
+    padding: 10px;
+    min-width: 300px;
+    cursor: pointer;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    background: #16cb92;
+    font: inherit;
+    color: #f9f9f9;
+}
+
+.button_search {
+    width: 10%;
+    padding: 10px;
+    min-width: 300px;
+    cursor: pointer;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    background: #16cb92;
+    font: inherit;
+    color: #f9f9f9;
+    margin: 35px 0 0 39%;
+}
+
+.footer_index {
+    background-color: #272727;
+    color: #dddddd;
+    padding: 20px;
+}
+
+.chillstick {
+    margin-left: 90%;
+}
+
+.cuest_title {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+/*form_result*/
+
+.body_form_result {
+    font-family: 'Parkinsans', sans-serif;
+    font-size: 28px;
+    background-color: #F8FFE5;
+}
+
+.div1 { 
+    background-color: #1B9AAA66;
+    margin: 30px 80px 10px 80px;
+    padding: 20px;
+    color: #272727;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.form_title {
+    font-size: 40px;
+    padding: 20px 0 30px 0;
+}
+
+a {
+    font-family: 'Parkinsans', sans-serif;
+    font-size: 20px;
+    color: #272727;
+    margin-left: 20px;
+}
+
+.interest {
+    font-size: 36px;
+    margin-left: 90px;
+    padding: 20px 0 20px 0;
+}
+
+.cuest_a {
+    padding-top: 20px;
+}
+
+video {
+    width: 640px;
+    height: 480px;
+    background: #000;
+    margin: 80px 0 40px 70px;
+}
+
+.mision_2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0 0 20px;
+}
+
+.vid_text {
+    text-align: left;
+    line-height: 20px;
+    margin: 150px 0 0 20px;
+}
+
+.mision {
+    font-size: 28px;
+    text-align: center;
+    margin: 200px 0 0 20px;
+}
+
+.select {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.form_subtitle {
+    font-size: 36px;
+}

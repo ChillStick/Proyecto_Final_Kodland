@@ -1,0 +1,6 @@
+Página web con temática de empresa que cuida el ambiente
+Opciones dentro de la página:
+ - Consejos de como mejorar ambientalmente nuestros hogares
+ - Un formulario para que nos contacten y un "Acerca de nosotros"
+ - Una IA que analice imágenes y vea los tipos de contaminación que hay, y como solucionarlo
+ - 

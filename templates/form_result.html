@@ -1,0 +1,36 @@
+<!-- Crear una página que emita los datos del usuario -->
+<!-- Al poner ! y darle Enter se crea el cuerpo de HTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css"> 
+    <title>Armonía Natural: Resultados</title>
+</head>
+<body class="body_form_result">
+    {% block content %}
+    <div class="div1"
+        <h1 class="form_title"> Gracias por rellenar el formulario.</h1>
+        <p><b>Su Nombre:</b> {{ name }}</p>
+        <p><b>Su E-Mail:</b> {{ email }}</p>
+        <p><b>Su dirección:</b> {{ address }}</p>
+        <p><b>Su fecha:</b> {{ date }}</p>
+    </div>
+    <h2 class="interest">También le podría interesar:</h2>
+    <ul class="list">
+        <li class="list__item">
+          <a href="/cuest">
+          <span>¿Qué tanta energía gastas?</span></a>
+        </li>
+        <!-- Asignación #1 -->
+        <li class="list__item">
+          <a href="/search">
+          <span>Verificar objetos ecológicos en tu zona</span></a>
+        </li>
+        <li class="list__item">
+          <a href="/">
+          <span>Regresar al menú principal</span></a>
+    {% endblock %}
+</body>
+</html>

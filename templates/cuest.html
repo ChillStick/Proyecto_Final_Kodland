@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../static/css/style.css"> 
+  <title>Armonía Natural</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>Armonía Natural: protegiendo a la naturaleza</h1>
+      <p>Calcule la eficiencia energética de su hogar, vea los desechos en su zona y más.</p>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+    <h2 class="cuest_title">Responda a las siguientes preguntas</h2>
+    <form action="{{ url_for('submit_cuest') }}" method="post" class="cuest">
+      <div class="user">
+        <ul class="user-info">
+            <li class="user-info__item">
+                <label for="number1">1. ¿Cuántos aparatos electrónicos tiene?</label>
+                <input type="number" name="number1" id="number1" placeholder="Cantidad de aparatos electrónicos" required>
+            </li>
+            <li class="user-info__item">
+                <!-- Tarea 4. Crear un campo de entrada para la cantidad de horas del usuario -->
+                <label for="number2">2. ¿Cuántas horas al día tiene que usar aparatos electrónicos?</label>
+                <input type="number" name="number2" id="number2" placeholder="Cantidad de horas al día" required>
+            </li>
+        </ul>
+        <!--Campos para las habitaciones y habitantes-->
+        <ul class="address-date">
+            <li class="user-info__item">
+                <label for="number3">3. ¿Cuántas personas viven en su hogar?</label>
+                <input type="number" name="number3" id="number3" placeholder="Cantidad de habitantes" required>
+            </li>
+            <li class="user-info__item">
+
+                <label for="number4">4. ¿Cuántas habitaciones hay en su hogar?</label>
+                <input type="number" name="number4" id="number4" placeholder="Cantidad de habitaciones" required>
+            </li>
+        </ul>
+    </div>
+    <div class="user">
+        <ul class="address-date">
+          <li class="user-info__item">
+              <label for="option1">5. ¿Considera que en su casa hay un fuerte consumo de energía?
+                <datalist id="options" name="options">
+                  <option value="Sí">Sí</option>
+                  <option value="No">No</option>
+                </datalist>
+              </label>
+              <input list="options" name="option1" id="option1" placeholder="¿Sí o no?" required>
+          </li>
+          <li class="user-info__item">
+            <label for="option2">6. ¿En su casa usan energía renovable?
+              <datalist id="options" name="options">
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+              </datalist>
+            </label>
+            <input list="options" name="option2" id="option2" placeholder="¿Sí o no?" required>
+          </li>
+        </ul>
+        <ul class="address-date">
+          <li class="user-info__item">
+              <label for="option3">7. ¿Su trabajo requiere el uso constante de energía?
+                <datalist id="options" name="options">
+                  <option value="Sí">Sí</option>
+                  <option value="No">No</option>
+                </datalist>
+              </label>
+              <input list="options" name="option3" id="option3" placeholder="¿Sí o no?" required>
+          </li>
+          <li class="user-info__item">
+            <label for="option4">8. ¿En su casa acostumbran a reciclar, reusar o reducir el consumo de energía?
+              <datalist id="options" name="options">
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+              </datalist>
+            </label>
+            <input list="options" name="option4" id="option4" placeholder="¿Sí o no?" required>
+          </li>
+        </ul>
+    </div>
+    <div class="user">
+      <ul class="address-date">
+        <li class="user-info__item">
+            <label for="more">9. Si tiene más datos respecto al consumo de energía en su hogar, escriba aquí:</label>
+            <textarea list="options" name="more" id="more" rows="5" placeholder="¡Claro que sí! Tengo más datos, tales como..."></textarea>
+        </li>
+      </ul>
+    </div>
+    <button class="button" type="sub_cuest">Obtener resultados</button>
+    </form>
+    {% endblock %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>

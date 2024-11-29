@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css"> 
+    <title>Armonía Natural: Resultados</title>
+</head>
+<body class="body_form_result">
+  <main>
+    {% block content %}
+    <div>
+      <div class="div1">
+          <h1 class="form_title"> Gracias por rellenar el formulario.</h1>
+          <h2 class="form_subtitle">Aquí sus resultados:</h2>
+          {%if finish <= 50%}
+          <p><b>¡Aprobó exitosamente el cuestionario!</b> Usted tiene una excelente eficiencia energética, independientemente de algunos problemas en ese aspecto, logra manejar sus recursos y usarlos de manera responsable y favorable para la naturaleza.</p>
+          {%elif finish >= 51 and finish <= 150%}
+          <p><b>¡Aprobó el cuestionario!</b> Usted tiene una buena eficiencia energética, aunque sufriendo algunos problemas por la cantidad de habitantes o la cantidad de aparatos electrónicos, aun así, no llega a ser grave su situación, pero lo más recomendable sería mejorar.</p>
+          {%elif finish >= 151 and finish <= 250%}
+          <p><b>¡Oh no! No pasó el cuestionario.</b> Usted tiene una deficiencia energética, probablemente por no aplicar soluciones saludables para la gestión de recursos energéticos, sumado a eso, puede que una gran cantidad de habitantes o de aparatos electrónicos haga que sea difícil de gestionar, ¡Pero nada es imposible! Si empieza a aplicar de manera constante algunas soluciones, más temprano que tarde notará los cambios.</p>
+          {%if finish >= 251%}
+          <p><b>¡Oh no! Desaprobó el cuestionario...</b> Usted tiene una deficiencia energética grave, parece que no aplicas nada que favoresca a cuidar los recursos, o también la gran cantidad de personas y habitaciones en su casa hagan que el aplicar cambios sea casi imposible. Lo mejor que puede hacer es ir aplicando poco a poco soluciones, donde probablemente tome varios meses gestionar y monitorear de buena manera sus recursos energéticos. ¡Échele ganas!</p>
+          {% endif %}
+      </div>
+      <h2 class="interest">También le podría interesar:</h2>
+      <ul class="list">
+          <li class="list__item">
+            <a href="/search">
+            <span>Verificar objetos ecológicos en tu zona</span></a>
+          </li>
+          <li class="list__item">
+            <a href="/form">
+            <span>¡Habla con nosotros!</span></a>
+          </li>
+          <li class="list__item">
+            <a href="/">
+            <span>Regresar al menú principal</span></a>
+    </div>
+    {% endblock %}
+  </main>
+</body>
+</html>
